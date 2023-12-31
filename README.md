@@ -40,8 +40,8 @@ Model:
 The model is a classical CNN inspired by the LeNet-5 architecture developed by Yann LeCun.
 
 <div>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/9fe9f111-23a1-4b6f-908b-f0f40b4f2096" alt="Image 2" width="400"/>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/400b922f-b6c3-4a40-8268-b17e10873c8d" alt="Image 1" width="400"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/9fe9f111-23a1-4b6f-908b-f0f40b4f2096" alt="Image 2" width="450"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/400b922f-b6c3-4a40-8268-b17e10873c8d" alt="Image 1" width="450"/>
 </div>
 
 Training:
@@ -53,8 +53,8 @@ Test Accuracy =  99.2125988007%
 
 Graphs:
 <div>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47" alt="Image 2" width="400"/>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051" alt="Image 1" width="400"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47" alt="Image 2" width="450"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051" alt="Image 1" width="450"/>
 </div>
 
 
