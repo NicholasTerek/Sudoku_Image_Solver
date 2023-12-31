@@ -52,9 +52,11 @@ Test Accuracy =  99.2125988007%
 
 
 Graphs:
+<div>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47" alt="Image 2" width="400"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051" alt="Image 1" width="400"/>
+</div>
 
-![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47)
-![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051)
 
 
 
