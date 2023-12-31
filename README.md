@@ -6,17 +6,12 @@
 
 ## Table of Contents
 
-### How To Run
-
-### Technology stack
-
-### Image Processing
-
-### Convolutional Neural Network
-
-### Sudoku Algorithm
-
-### Flask Server
+- [How To Run](#how-to-run)
+- [Technology Stack](#technology-stack)
+- [Image Processing](#image-processing)
+- [Convolutional Neural Network](#convolutional-neural-network)
+- [Sudoku Algorithm](#sudoku-algorithm)
+- [Flask Server](#flask-server)
 
 ## How To Run
 
