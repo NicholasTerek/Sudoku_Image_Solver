@@ -6,6 +6,11 @@
 
 
 
+
+
+# Image Preprocessing:
+
+
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/697618bc-7bd9-4ffd-80b4-aaf9297900fc)
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/ff757b23-c984-49ee-a041-86aeb41962d0)
 
