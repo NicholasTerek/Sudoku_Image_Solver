@@ -7,12 +7,16 @@
 
     pip install numpy
 
-   pip install numpy
-   ''pip install OpenCV''
+
+    pip install OpenCV
+
+    pip install tensorflow
+
+    pip install flask
+
+    pip install flask_uploads flask_wtf
    ::
-   pip install tensorflow
-   pip install flask
-   pip install flask_uploads flask_wtf
+
 
   
 
