@@ -34,7 +34,7 @@ Training Data:
 The training data used for this CNN is from Kaggle, it contains just over 1000 unique images for each digit for over 10,000 total images. Additionally to improve accuracy of CNN, i implemented an attempt at even distribution 
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/5b35b3d4-f468-448d-904e-45047d3b0c7d)
-![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/80a54fc2-a3dd-4f88-92d8-64d0f6b14233)
+
 
 Model:
 The model is a classical CNN inspired by the LeNet-5 architecture developed by Yann LeCun.
@@ -45,9 +45,8 @@ The model is a classical CNN inspired by the LeNet-5 architecture developed by Y
 </div>
 
 Training:
-
-
-
+The model was trained over 10 epochs with a batch size of  130 images. Next time i would try and acquire more computational power as this was near the limits for my computer 
+Test Accuracy =  99.2125988007%
 
 
 
