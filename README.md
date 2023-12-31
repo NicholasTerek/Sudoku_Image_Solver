@@ -3,7 +3,21 @@
 ![ezgif-2-510eec4329](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/474b9cfb-6cce-4312-a436-ce119a8d4763)
 
 
-## How To Install
+## How To Run
+
+```bash
+pip install numpy
+```bash
+pip install OpenCV
+```bash
+pip install tensorflow
+```bash
+pip install flask
+```bash
+pip install flask_uploads, flask_wtf
+
+Than run app.py file in terminal
+Finally go to http://127.0.0.1:5000/
 
 
 ## Technology stack:
