@@ -5,6 +5,7 @@
 
 ## How To Run
 
+### Packages Needed
     pip install numpy
 -----------------------------------
     pip install OpenCV
@@ -19,8 +20,8 @@
     pip install flask_uploads flask_wtf
 -----------------------------------
 
-Than run app.py file in terminal
-Finally go to http://127.0.0.1:5000/
+- Than run app.py file in terminal
+- Finally go to http://127.0.0.1:5000/
 
 
 ## Technology stack:
