@@ -5,8 +5,6 @@
 
 ## How To Run
 
-Packages Need::
-
     pip install numpy
 
     cd debug
