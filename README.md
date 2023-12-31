@@ -9,6 +9,19 @@
 
 
 # Image Preprocessing:
+Using OpenCV I processed any given sudoku puzzle, using this process
+
+1. Converting it to GrayScale
+2. Gaussian Blurring the Image 
+3. Adaptive Thresholding to contrast the image 
+4. Finding the contour to find the corners of the Sudoku 
+5. Warped the perspective of an image to give just the Sudoku grid
+6. Using a created split_Boxes() method to divide the image into 81 even images
+7. Using CNN to detect the numbers and place them into an array
+8. Overlay the array onto a blank image
+9. Using a created drawGrid() method to draw a grid around each number
+10. Warp the perspective back to how the photo is originally given
+11. Overlay the numbers onto the original image
 
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/697618bc-7bd9-4ffd-80b4-aaf9297900fc)
