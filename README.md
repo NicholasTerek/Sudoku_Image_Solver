@@ -30,7 +30,7 @@ Using OpenCV I processed any given sudoku puzzle, using this process
 
 ## Convolutional Neural Network
 
-Training Data:
+### Training Data:
 The training data used for this CNN is from Kaggle, it contains just over 1000 unique images for each digit for over 10,000 total images. Additionally to improve accuracy of CNN, i implemented an attempt at even distribution 
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e7f0be9b-da33-4f59-8eb6-8e54a5de0da9)
