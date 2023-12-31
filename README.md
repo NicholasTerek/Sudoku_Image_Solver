@@ -4,7 +4,10 @@ This program is designed to take in an image of a sudoku and display the solved 
     <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/474b9cfb-6cce-4312-a436-ce119a8d4763" alt="Example Video" width="800"/>
 </div>
 
-
+<div>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/ca48d7dd-b6aa-4c04-9eeb-1dab4ac539f7" alt="Image 2" width="400"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/a785e021-8da9-4864-ad0b-67eb038e6e31" alt="Image 1" width="400"/>
+</div>
 
 ## Table of Contents
 
