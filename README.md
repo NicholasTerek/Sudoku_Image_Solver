@@ -3,8 +3,13 @@
 ![ezgif-2-510eec4329](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/474b9cfb-6cce-4312-a436-ce119a8d4763)
 
 
+## How To Install
 
 
+## Technology stack:
+Frontend: (HTML/CSS, BootStrap)
+Backend: (Flask, OpenCV, os, numpy)
+CNN-Model: (TensorFlow Keras, Sklearn, numpy, MatPlotLib)
 
 
 
@@ -40,8 +45,8 @@ The training data used for this CNN is from Kaggle, it contains just over 1000 u
 The model is a classical CNN inspired by the LeNet-5 architecture developed by Yann LeCun.
 
 <div>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/9fe9f111-23a1-4b6f-908b-f0f40b4f2096" alt="Image 2" width="450"/>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/400b922f-b6c3-4a40-8268-b17e10873c8d" alt="Image 1" width="450"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/9fe9f111-23a1-4b6f-908b-f0f40b4f2096" alt="Image 2" width="400"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/400b922f-b6c3-4a40-8268-b17e10873c8d" alt="Image 1" width="400"/>
 </div>
 
 ### Training:
@@ -54,8 +59,8 @@ The model was trained over 10 epochs with a batch size of  130 images. Next time
 ### Graphs:
 Here are some graphs to show how the training went for my CNN
 <div>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47" alt="Image 2" width="450"/>
-  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051" alt="Image 1" width="450"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47" alt="Image 2" width="400"/>
+  <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051" alt="Image 1" width="400"/>
 </div>
 
 
