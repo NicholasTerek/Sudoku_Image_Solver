@@ -7,9 +7,9 @@
 
 
 ## Technology stack:
-- Frontend: (HTML/CSS, BootStrap)
-- Backend: (Python, Flask, OpenCV, os, numpy)
-- CNN-Model: (Python, TensorFlow Keras, Sklearn, numpy, MatPlotLib, OpenCV)
+<div><b>Frontend:</b> (HTML/CSS, BootStrap)</div> 
+<div><b>Backend:</b> (Python, Flask, OpenCV, os, numpy)</div> 
+<div><b>CNN-Model:</b> (Python, TensorFlow Keras, Sklearn, numpy, MatPlotLib, OpenCV) </div> 
 
 
 
