@@ -1,7 +1,7 @@
 # Sudoku Solver
 This program is designed to take in an image of a sudoku and display the solved version of the image
 <div style='justify-content-center'>
-    ![ezgif-2-510eec4329](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/474b9cfb-6cce-4312-a436-ce119a8d4763)
+    <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/474b9cfb-6cce-4312-a436-ce119a8d4763" alt="Example Video" width="400"/>
 </div>
 
 
