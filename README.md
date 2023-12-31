@@ -46,7 +46,7 @@ The model is a classical CNN inspired by the LeNet-5 architecture developed by Y
 
 ### Training:
 The model was trained over 10 epochs with a batch size of  130 images. Next time i would try and acquire more computational power as this was near the limits for my computer 
-Test Accuracy =  99.2125988007%
+- Test Accuracy =  99.2125988007%
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/2915cf3a-2b41-41f2-9045-285d85ead26e)
 
