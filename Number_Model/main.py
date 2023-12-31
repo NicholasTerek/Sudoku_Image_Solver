@@ -14,7 +14,7 @@ from tensorflow.python.keras.layers import Dropout, Flatten, Dense
 from tensorflow.python.keras.layers.convolutional import Conv2D, MaxPooling2D
 
 
-path = 'C:/Users/nicky/OneDrive/Desktop/Sudoku_Solver/Number_Model/myData'
+path = './myData'
 
 myList = os.listdir(path)
 
@@ -73,20 +73,20 @@ def myModel(): #LeNet model
     number_of_filters = 60
     size_of_filter_1 = (5,5)
     size_of_filter_2 = (3,3)
-    sizeOfPool = (2,2)
-    noOfNode = 500
+    size_of_pool = (2,2)
+    number_of_nodes = 500
 
     model = Sequential()
     model.add((Conv2D(number_of_filters, size_of_filter_1, input_shape=(image_dimension[0],image_dimension[1], 1),activation='relu')))
     model.add((Conv2D(number_of_filters, size_of_filter_1,activation='relu')))
-    model.add(MaxPooling2D(pool_size=sizeOfPool))
+    model.add(MaxPooling2D(pool_size=size_of_pool))
     model.add((Conv2D(number_of_filters//2, size_of_filter_2,activation='relu')))
     model.add((Conv2D(number_of_filters//2, size_of_filter_2,activation='relu')))
-    model.add(MaxPooling2D(pool_size=sizeOfPool))
+    model.add(MaxPooling2D(pool_size=size_of_pool))
     
     model.add(Dropout(0.5))
     model.add(Flatten())
-    model.add(Dense(noOfNode, activation='relu'))
+    model.add(Dense(number_of_nodes, activation='relu'))
     model.add(Dense(number_of_folders, activation='softmax'))
     model.compile(optimizer=adam_v2.Adam(learning_rate=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
     return model
@@ -94,11 +94,10 @@ def myModel(): #LeNet model
 model = myModel()
 
 #SETTING FOR MODEL FITTING
-batchSizeVal = 50
-epochsVal = 5
-stepsPerEpochVal = 2000
+value_for_batch_size = 50
+value_for_epochs = 5
 
-history = model.fit(x=X_train, y=Y_train, batch_size=batchSizeVal, steps_per_epoch=len(X_train)//batchSizeVal, epochs=epochsVal, validation_data=(X_validation, Y_validation))
+history = model.fit(x=X_train, y=Y_train, batch_size=value_for_batch_size, steps_per_epoch=len(X_train)//value_for_batch_size, epochs=value_for_epochs, validation_data=(X_validation, Y_validation))
 
 model.save('C:/Users/nicky/OneDrive/Desktop/Sudoku_Solver/Number_Model/my_model2.keras')
 model.save('C:/Users/nicky/OneDrive/Desktop/Sudoku_Solver/Number_Model/my_model1.h5')
