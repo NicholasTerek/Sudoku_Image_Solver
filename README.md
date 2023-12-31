@@ -82,8 +82,11 @@ Here are some graphs to show how the training went for my CNN
 </div>
 
 
+## Sudoku Algorithm
+ 
+After extracting a numerical array representing the numbers from the Sudoku grid image, we employ a backtracking algorithm to solve the puzzle. This recursive approach systematically attempts to place valid numbers in empty grid cells. If the algorithm encounters a dead end or an unsolvable puzzle, it backtracks to the last empty cell and explores alternative options. This process continues until the Sudoku puzzle is successfully solved.
 
-
+## Flask Server
 
 
 
