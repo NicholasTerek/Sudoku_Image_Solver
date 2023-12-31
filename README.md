@@ -8,7 +8,7 @@
 
 
 
-# Image Preprocessing:
+## Image Preprocessing:
 Using OpenCV I processed any given sudoku puzzle, using this process
 
 1. Converting it to GrayScale
@@ -23,23 +23,12 @@ Using OpenCV I processed any given sudoku puzzle, using this process
 10. Warp the perspective back to how the photo is originally given
 11. Overlay the numbers onto the original image
 
-- Converting it to Grayscale
-- Gaussian Blurring the Image 
-- Adaptive Thresholding to contrast the image 
-- Finding the contour to find the corners of the Sudoku 
-- Warping the perspective of an image to give just the Sudoku grid
-- Using a created `split_Boxes()` method to divide the image into 81 even images
-- Using CNN to detect the numbers and place them into an array
-- Overlaying the array onto a blank image
-- Using a created `drawGrid()` method to draw a grid around each number
-- Warping the perspective back to how the photo is originally given
-- Overlaying the numbers onto the original image
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/697618bc-7bd9-4ffd-80b4-aaf9297900fc)
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/ff757b23-c984-49ee-a041-86aeb41962d0)
 
 
-# Convolutional Neural Network
+## Convolutional Neural Network
 
 Training Data:
 The training data used for this CNN is from Kaggle, it contains just over 1000 unique images for each digit for over 10,000 total images. Additionally to improve accuracy of CNN, i implemented an attempt at even distribution 
@@ -47,7 +36,7 @@ The training data used for this CNN is from Kaggle, it contains just over 1000 u
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e7f0be9b-da33-4f59-8eb6-8e54a5de0da9)
 
 
-Model:
+### Model:
 The model is a classical CNN inspired by the LeNet-5 architecture developed by Yann LeCun.
 
 <div>
@@ -55,14 +44,14 @@ The model is a classical CNN inspired by the LeNet-5 architecture developed by Y
   <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/400b922f-b6c3-4a40-8268-b17e10873c8d" alt="Image 1" width="450"/>
 </div>
 
-Training:
+### Training:
 The model was trained over 10 epochs with a batch size of  130 images. Next time i would try and acquire more computational power as this was near the limits for my computer 
 Test Accuracy =  99.2125988007%
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/2915cf3a-2b41-41f2-9045-285d85ead26e)
 
 
-Graphs:
+### Graphs:
 Here are some graphs to show how the training went for my CNN
 <div>
   <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47" alt="Image 2" width="450"/>
