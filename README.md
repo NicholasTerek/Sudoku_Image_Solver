@@ -48,12 +48,14 @@ Training:
 The model was trained over 10 epochs with a batch size of  130 images. Next time i would try and acquire more computational power as this was near the limits for my computer 
 Test Accuracy =  99.2125988007%
 
+![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/2915cf3a-2b41-41f2-9045-285d85ead26e)
 
+
+Graphs:
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47)
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051)
 
-![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/2915cf3a-2b41-41f2-9045-285d85ead26e)
 
 
 
