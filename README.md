@@ -13,7 +13,7 @@
 
 
 
-## Image Preprocessing:
+## Image Processing:
 Using OpenCV I processed any given sudoku puzzle, using this process
 
 1. Converting it to GrayScale
