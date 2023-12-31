@@ -30,6 +30,22 @@ Using OpenCV I processed any given sudoku puzzle, using this process
 
 
 
+# Convolutional Neural Network
+
+Training Data:
+The training data used for this CNN is from Kaggle, it contains just over 1000 unique images for each digit for over 10,000 total images.
+
+Model:
+The model is a classical CNN inspired by the LeNet-5 architecture developed by Yann LeCun.
+
+Input Layer
+Convolutional Layer (Conv2D) * 2
+Max Pooling Layer (MaxPooling2D)
+Convolutional Layer (Conv2D) * 2
+Max Pooling Layer (MaxPooling2D)
+Dropout Layer (Dropout)
+Flatten Layer (Flatten)
+Dense Layer (Dense) * 2
 
 
 
