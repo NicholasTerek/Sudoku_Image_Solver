@@ -23,6 +23,17 @@ Using OpenCV I processed any given sudoku puzzle, using this process
 10. Warp the perspective back to how the photo is originally given
 11. Overlay the numbers onto the original image
 
+- Converting it to Grayscale
+- Gaussian Blurring the Image 
+- Adaptive Thresholding to contrast the image 
+- Finding the contour to find the corners of the Sudoku 
+- Warping the perspective of an image to give just the Sudoku grid
+- Using a created `split_Boxes()` method to divide the image into 81 even images
+- Using CNN to detect the numbers and place them into an array
+- Overlaying the array onto a blank image
+- Using a created `drawGrid()` method to draw a grid around each number
+- Warping the perspective back to how the photo is originally given
+- Overlaying the numbers onto the original image
 
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/697618bc-7bd9-4ffd-80b4-aaf9297900fc)
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/ff757b23-c984-49ee-a041-86aeb41962d0)
