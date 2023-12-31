@@ -6,19 +6,22 @@ from tensorflow.python.keras.models import load_model
 from typing import List, Tuple, Optional
 import os
 
+
 def solve_image(path_To_Image):
-    height_Image = 450 
+    height_Image = 450
     width_Image = 450
 
-    model = load_model('./Number_Model/my_model2.keras', compile=False)
+    model = load_model("./Number_Model/my_model2.keras", compile=False)
     img = cv2.imread(path_To_Image)
-    img = cv2.resize(img,(width_Image, height_Image))
+    img = cv2.resize(img, (width_Image, height_Image))
     blank_img = np.zeros((height_Image, width_Image, 3), np.uint8)
 
     imgThreshold = preProcessing(img)
 
     imgContours = imgThreshold.copy()
-    contours, hierarchy = cv2.findContours(imgThreshold, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(
+        imgThreshold, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
+    )
     cv2.drawContours(imgContours, contours, -1, (0, 255, 0), 3)
 
     imgBigContours = img.copy()
@@ -27,9 +30,11 @@ def solve_image(path_To_Image):
     if biggest.size != 0:
         biggest = reorder(biggest)
         cv2.drawContours(imgBigContours, biggest, -1, (0, 255, 0), 15)
-        
+
         points1 = np.float32(biggest)
-        points2 = np.float32([[0,0], [width_Image,0], [0, height_Image], [width_Image, height_Image]])
+        points2 = np.float32(
+            [[0, 0], [width_Image, 0], [0, height_Image], [width_Image, height_Image]]
+        )
         matrix = cv2.getPerspectiveTransform(points1, points2)
         imgWarpColoured = cv2.warpPerspective(img, matrix, (width_Image, height_Image))
         imgWarpColoured = cv2.cvtColor(imgWarpColoured, cv2.COLOR_BGR2GRAY)
@@ -38,36 +43,45 @@ def solve_image(path_To_Image):
         numbers = getPrediction(boxes, model)
 
         img_detected_Digits = blank_img.copy()
-        img_detected_Digits = displayNumbers(img_detected_Digits, numbers, color=(255, 0 , 255))
-        
+        img_detected_Digits = displayNumbers(
+            img_detected_Digits, numbers, color=(255, 0, 255)
+        )
+
         solved_number = listProcessing(numbers)
-        
+
         numbers = np.asarray(numbers)
-        posArray = np.where(numbers >0,0,1)
+        posArray = np.where(numbers > 0, 0, 1)
 
         try:
             solve(solved_number)
-        except: 
+        except:
             print("SUDOKU CANT BE SOLVED")
             pass
 
         solved_number = reverse_listProcessing(solved_number)
-        solved_number = solved_number*posArray
-        imgSolvedDigits= blank_img.copy()
+        solved_number = solved_number * posArray
+        imgSolvedDigits = blank_img.copy()
         imgSolvedDigits = displayNumbers(imgSolvedDigits, solved_number)
 
         points2 = np.float32(biggest)
-        points1 = np.float32([[0,0], [width_Image,0], [0, height_Image], [width_Image, height_Image]])
+        points1 = np.float32(
+            [[0, 0], [width_Image, 0], [0, height_Image], [width_Image, height_Image]]
+        )
         matrix = cv2.getPerspectiveTransform(points1, points2)
         imgInverseWarpColoured = img.copy()
-        imgInverseWarpColoured = cv2.warpPerspective(imgSolvedDigits, matrix, (width_Image, height_Image))
+        imgInverseWarpColoured = cv2.warpPerspective(
+            imgSolvedDigits, matrix, (width_Image, height_Image)
+        )
         inverse_perspective = cv2.addWeighted(imgInverseWarpColoured, 1, img, 0.5, 1)
-        modified_path = 'C:/Users/nicky/OneDrive/Desktop/Sudoku_Solver/uploads/modified_' + os.path.basename(path_To_Image)
+        modified_path = (
+            "C:/Users/nicky/OneDrive/Desktop/Sudoku_Solver/uploads/modified_"
+            + os.path.basename(path_To_Image)
+        )
         cv2.imwrite(modified_path, inverse_perspective)
         print("done")
         return modified_path
 
-    else: 
+    else:
         print("SUDOKU NOT FOUND")
         return None
 
