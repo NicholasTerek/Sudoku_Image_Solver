@@ -38,19 +38,10 @@ The training data used for this CNN is from Kaggle, it contains just over 1000 u
 Model:
 The model is a classical CNN inspired by the LeNet-5 architecture developed by Yann LeCun.
 
-1. Input Layer
-2. Convolutional Layer (Conv2D) * 2
-3. Max Pooling Layer (MaxPooling2D)
-4. Convolutional Layer (Conv2D) * 2
-5. Max Pooling Layer (MaxPooling2D)
-6. Dropout Layer (Dropout)
-7. Flatten Layer (Flatten)
-8. Dense Layer (Dense) * 2
-
-
 <div>
   <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/9fe9f111-23a1-4b6f-908b-f0f40b4f2096" alt="Image 2" width="400"/>
   <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/400b922f-b6c3-4a40-8268-b17e10873c8d" alt="Image 1" width="400"/>
 </div>
 
+Training:
 
