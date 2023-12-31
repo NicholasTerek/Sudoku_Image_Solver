@@ -7,11 +7,6 @@
 
     pip install numpy
 
-    cd debug
-    ../configure --with-pydebug
-    make
-    make test
-
    pip install numpy
    ''pip install OpenCV''
    ::
