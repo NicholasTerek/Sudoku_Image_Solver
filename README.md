@@ -5,6 +5,14 @@
 
 ## How To Run
 
+If you wish, you can create a subdirectory and invoke configure from there.
+For example::
+
+    mkdir debug
+    cd debug
+    ../configure --with-pydebug
+    make
+    make test
 
    ''pip install numpy''
    ''pip install OpenCV''
