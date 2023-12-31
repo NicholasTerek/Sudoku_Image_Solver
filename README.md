@@ -88,9 +88,27 @@ After extracting a numerical array representing the numbers from the Sudoku grid
 
 ## Flask Server
 
+This Flask server is designed to facilitate Sudoku puzzle solving through image processing and a backtracking algorithm. The structure of the code is organized as follows:
 
+1. **Uploads Configuration:** Utilizes Flask-Uploads to handle uploaded images, configuring the upload destination.
 
+2. **Form Definition:** Defines a FlaskForm using Flask-WTF, which includes a FileField for image uploads and a SubmitField.
 
+3. **Routes:**
+   - `/uploads/<filename>`: Serves uploaded images.
+   - `/`: Main route for handling image uploads, processing, and displaying the results.
+
+4. **Image Processing Integration:** Imports image processing methods for solving Sudoku puzzles from `Image_Processing.main` and supporting methods from `Image_Processing.image_methods`.
+
+5. **Flask App Configuration:** Configures Flask app settings, including the secret key and template folder location.
+
+6. **App Initialization:** Initializes the Flask app with the specified template folder.
+
+7. **Form and Upload Configuration:** Creates an instance of the `UploadForm` and configures image uploads using Flask-Uploads.
+
+8. **Route Definitions:**
+   - `/uploads/<filename>`: Returns uploaded images.
+   - `/`: Handles image uploads, initiates processing, and renders the results on the HTML template.
 
 
 
