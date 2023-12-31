@@ -70,18 +70,18 @@ Y_test = to_categorical(Y_test, number_of_folders)
 Y_validation = to_categorical(Y_validation, number_of_folders)
 
 def myModel(): #LeNet model
-    noOfFilters = 60
-    sizeOfFliter1 = (5,5)
-    sizeOfFliter2 = (3,3)
+    number_of_filters = 60
+    size_of_filter_1 = (5,5)
+    size_of_filter_2 = (3,3)
     sizeOfPool = (2,2)
     noOfNode = 500
 
     model = Sequential()
-    model.add((Conv2D(noOfFilters, sizeOfFliter1, input_shape=(image_dimension[0],image_dimension[1], 1),activation='relu')))
-    model.add((Conv2D(noOfFilters, sizeOfFliter1,activation='relu')))
+    model.add((Conv2D(number_of_filters, size_of_filter_1, input_shape=(image_dimension[0],image_dimension[1], 1),activation='relu')))
+    model.add((Conv2D(number_of_filters, size_of_filter_1,activation='relu')))
     model.add(MaxPooling2D(pool_size=sizeOfPool))
-    model.add((Conv2D(noOfFilters//2, sizeOfFliter2,activation='relu')))
-    model.add((Conv2D(noOfFilters//2, sizeOfFliter2,activation='relu')))
+    model.add((Conv2D(number_of_filters//2, size_of_filter_2,activation='relu')))
+    model.add((Conv2D(number_of_filters//2, size_of_filter_2,activation='relu')))
     model.add(MaxPooling2D(pool_size=sizeOfPool))
     
     model.add(Dropout(0.5))
