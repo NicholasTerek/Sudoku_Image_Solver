@@ -5,13 +5,14 @@
 
 ## How To Run
 
-<div> ```bash
-   pip install numpy
-   pip install OpenCV
+
+   ''pip install numpy''
+   ''pip install OpenCV''
+   ::
    pip install tensorflow
    pip install flask
    pip install flask_uploads flask_wtf
-</div>
+
   
 
 Than run app.py file in terminal
