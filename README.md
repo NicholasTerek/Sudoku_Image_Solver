@@ -52,6 +52,7 @@ Test Accuracy =  99.2125988007%
 
 
 Graphs:
+Here are some graphs to show how the training went for my CNN
 <div>
   <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47" alt="Image 2" width="450"/>
   <img src="https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051" alt="Image 1" width="450"/>
