@@ -5,16 +5,13 @@
 
 ## How To Run
 
-```bash
-pip install numpy
-```bash
-pip install OpenCV
-```bash
-pip install tensorflow
-```bash
-pip install flask
-```bash
-pip install flask_uploads, flask_wtf
+
+   ```bash
+   pip install numpy
+   pip install OpenCV
+   pip install tensorflow
+   pip install flask
+   pip install flask_uploads flask_wtf
 
 Than run app.py file in terminal
 Finally go to http://127.0.0.1:5000/
