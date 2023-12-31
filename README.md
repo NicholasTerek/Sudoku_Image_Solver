@@ -28,12 +28,13 @@ Using OpenCV I processed any given sudoku puzzle, using this process
 ![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/ff757b23-c984-49ee-a041-86aeb41962d0)
 
 
-
-
 # Convolutional Neural Network
 
 Training Data:
-The training data used for this CNN is from Kaggle, it contains just over 1000 unique images for each digit for over 10,000 total images.
+The training data used for this CNN is from Kaggle, it contains just over 1000 unique images for each digit for over 10,000 total images. Additionally to improve accuracy of CNN, i implemented an attempt at even distribution 
+
+![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/5b35b3d4-f468-448d-904e-45047d3b0c7d)
+![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/80a54fc2-a3dd-4f88-92d8-64d0f6b14233)
 
 Model:
 The model is a classical CNN inspired by the LeNet-5 architecture developed by Yann LeCun.
@@ -44,4 +45,25 @@ The model is a classical CNN inspired by the LeNet-5 architecture developed by Y
 </div>
 
 Training:
+
+
+
+
+
+
+![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e8dea320-0875-464b-98c6-ada44dc84e47)
+![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/e04c8118-d70d-496b-a922-bf152d720051)
+
+![image](https://github.com/NicholasTerek/Sudoku_Image_Solver/assets/139080309/2915cf3a-2b41-41f2-9045-285d85ead26e)
+
+
+
+
+
+
+
+
+
+
+
 
